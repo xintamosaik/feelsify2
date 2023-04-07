@@ -56,7 +56,8 @@ div#greeting-feelsify {
     height: 16em;
     width: 16em;
     border-radius: 50%;
-    background-color: var(--primary-color);
+    border: 0.3em solid  var(--primary-color);
+    background-color: var(--background-color);
 
 }
 
@@ -82,7 +83,8 @@ section h2 {
     height: 6em;
     width: 6em;
     border-radius: 50%;
-    background-color: var(--primary-color);
+    border: 0.3em solid  var(--primary-color);
+    background-color: var(--background-color);
 }
 
 section h2 span {
@@ -108,7 +110,7 @@ footer {
     bottom: 0;
     right: 0;
     left: 0;
-    padding: 6px 12px;
+    padding: 2em 2em;
 }
 
 button.action {
@@ -117,8 +119,14 @@ button.action {
     font-size: 2em;
     width: 100%;
     padding: 8px 16px;
-    color: var(--background-color);
-    background-color: var(--primary-color);
-    border-width: 0px;
+    color:  var(--primary-color);
+    background-color:var(--background-color);
+    border: 0.2em solid var(--primary-color);
     border-radius: 32px;
+    box-shadow: 0.2em 0.2em  var(--primary-color);
+}
+
+button.action:active {
+    transform: translate(0.2em, 0.2em);
+    box-shadow: unset;
 }
