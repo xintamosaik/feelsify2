@@ -1,0 +1,129 @@
+:root {
+    --background-color: rgb(31, 27, 30);
+    --primary-color: #c9ddba;
+    --font-default: 'Mouse Memoirs', sans-serif;
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--primary-color);
+    font-family: var(--font-default);
+
+
+}
+
+header {
+    padding: 12px 6px;
+    background-color: rgb(69, 61, 64);
+    color: white;
+}
+
+header h1 {
+    font-size: 2em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+header h1 button#back-button {
+    border: none;
+    background-color: transparent;
+    visibility: hidden;
+}
+
+header h1 * {
+    font-size: 1.5em;
+}
+
+
+main {
+    padding: 2em 1em;
+}
+
+main section {
+    padding: 2em 0px;
+    display: flex;
+    justify-content: center;
+}
+
+section#greeting {
+    display: flex;
+    justify-content: center;
+
+}
+
+div#greeting-feelsify {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 16em;
+    width: 16em;
+    border-radius: 50%;
+    background-color: var(--primary-color);
+
+}
+
+@keyframes rotation {
+    95% {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(359deg);
+    }
+}
+
+#greeting-buddy {
+    font-size: 12em;
+    animation: rotation 6s infinite linear;
+}
+
+section h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 6em;
+    width: 6em;
+    border-radius: 50%;
+   
+    background-color: var(--primary-color);
+   
+}
+
+section h2 span {
+    font-size: 5em;
+    color: var(--background-color);
+    filter: saturate(0);
+
+}
+
+section#track {
+    display: none;
+}
+
+section#review {
+    display: none;
+}
+
+footer {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    padding: 6px 12px;
+}
+
+button.action {
+    font-family: var(--font-default);
+    font-size: 2em;
+    width: 100%;
+    padding: 8px 16px;
+    background-color: var(--primary-color);
+    border-width: 0px;
+    border-radius: 32px;
+}
