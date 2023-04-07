@@ -1,6 +1,6 @@
 :root {
-    --background-color: rgb(31, 27, 30);
-    --primary-color: #c9ddba;
+    --background-color: white;
+    --primary-color: #6a4168;
     --font-default: 'Mouse Memoirs', sans-serif;
 }
 
@@ -14,8 +14,8 @@ body {
 
 header {
     padding: 12px 6px;
-    background-color: rgb(69, 61, 64);
-    color: white;
+
+    color: var(--primary-color);
 }
 
 header h1 {
@@ -126,6 +126,7 @@ button.action {
     font-size: 2em;
     width: 100%;
     padding: 8px 16px;
+    color: var(--background-color);
     background-color: var(--primary-color);
     border-width: 0px;
     border-radius: 32px;
