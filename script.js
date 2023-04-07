@@ -1,3 +1,5 @@
+"use strict";
+
 function f33ls_hide_home() {
     const greeting_section = document.getElementById('greeting')
     greeting_section.style.display = 'none'
@@ -8,10 +10,10 @@ function f33ls_hide_home() {
 }
 
 function f33ls_go_home() {
-    const track_section  = document.getElementById('track')
+    const track_section = document.getElementById('track')
     track_section.style.display = 'none'
 
-    const review_section  = document.getElementById('review')
+    const review_section = document.getElementById('review')
     review_section.style.display = 'none'
 
     const button_review = document.getElementById('button-review')
@@ -29,16 +31,16 @@ function f33ls_go_home() {
 
 function f33ls_review(event) {
     event.target.style.display = 'none'
-   
+
     f33ls_hide_home()
 
-    const track_section  = document.getElementById('track')
+    const track_section = document.getElementById('track')
     track_section.style.display = 'none'
 
     const button_track = document.getElementById('button-track')
     button_track.style.display = 'block'
 
-    const review_section  = document.getElementById('review')
+    const review_section = document.getElementById('review')
     review_section.style.display = 'flex'
 }
 
@@ -47,13 +49,13 @@ function f33ls_track(event) {
 
     f33ls_hide_home()
 
-    const review_section  = document.getElementById('review')
+    const review_section = document.getElementById('review')
     review_section.style.display = 'none'
 
     const button_review = document.getElementById('button-review')
     button_review.style.display = 'block'
 
-    const track_section  = document.getElementById('track')
+    const track_section = document.getElementById('track')
     track_section.style.display = 'flex'
 }
 
