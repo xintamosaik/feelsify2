@@ -111,6 +111,8 @@ footer {
     position: fixed;
     display: flex;
     flex-direction: column;
+
+    align-items: center;
     gap: 24px;
     bottom: 0;
     right: 0;
@@ -119,6 +121,7 @@ footer {
 }
 
 button.action {
+    max-width: 12em;
     font-family: var(--font-default);
     font-size: 2em;
     width: 100%;
